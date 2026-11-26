@@ -196,6 +196,21 @@ h2{font-size:33pt}
 .gallery-photo{height:auto;aspect-ratio:1.6}
 .gallery-item figcaption{padding:8px 0}
 }
+
+#audience .lead{max-width:960px}
+.audience-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 15px}
+.audience-grid .audience-block{padding:12px 15px}
+.audience-grid .audience-block p{margin:6px 0 3px}
+.audience-grid .audience-block a{font-size:12px;color:var(--soft)}
+.account-followup{margin-top:0}
+#roles .title-table th,#roles .title-table td{padding:8px 10px}
+#roles .slide-head,#audience .slide-head{margin-bottom:20px}
+.pilot-check{margin-top:14px;padding:11px 15px;font-size:14px}
+#pilot .final-quote{font-size:clamp(18px,2.1vw,28px);margin-top:13px;padding-top:12px}
+@media(max-width:650px){
+.audience-grid{grid-template-columns:1fr}
+#roles .title-table th,#roles .title-table td{padding:4px 0}
+}
 </style>
 </head>
 <body>
@@ -203,7 +218,7 @@ h2{font-size:33pt}
 <a class="wordmark" href="#cover" aria-label="返回提案封面">UNIBUY</a>
 <div class="toolbar-controls">
 <label aria-label="章节导航"><select class="jump" id="chapter" aria-label="前往章节">
-<option value="cover">封面</option><option value="evidence">账号实查</option><option value="gallery">门店实拍</option><option value="market">赛道竞品</option><option value="persona">人设定位</option><option value="titles">标题复盘</option><option value="script">文案优化</option><option value="layers">三层内容</option><option value="audience">精准人群</option><option value="picture">画面表达</option><option value="topics">系列选题</option><option value="pilot">试拍与复盘</option>
+<option value="cover">封面</option><option value="evidence">账号实查</option><option value="gallery">门店实拍</option><option value="market">赛道竞品</option><option value="persona">人设定位</option><option value="titles">标题复盘</option><option value="script">文案优化</option><option value="layers">三层内容</option><option value="audience">品牌客群</option><option value="roles">账号优化</option><option value="picture">画面表达</option><option value="topics">系列选题</option><option value="pilot">试拍与复盘</option>
 </select></label>
 <button type="button" class="control live-only" id="previous" aria-label="上一页">←</button>
 <span id="page-count" class="step live-only" aria-live="polite"></span>
@@ -228,7 +243,7 @@ h2{font-size:33pt}
 <div class="slide-head">
 <p class="eyebrow">抖音站内实查</p>
 <h2 id="evidence-title">品牌发什么，顾客又在看什么</h2>
-<p class="lead">核对 11 个相关账号的主页、简介、置顶和可见作品，抽看代表作画面。数据为 2026 年 11 月 26 日公开页面快照。</p>
+<p class="lead">首轮核对 11 个主页。11 月 27 日复查深圳重点账号，并补看马克、杭州阿杰、三亚奢探长和香港广东道店。</p>
 </div>
 <div class="stat-grid">
 <div class="stat"><span class="big">8 条</span><b>品牌官方号可见作品</b><p class="small">各地门店介绍、开业和店型。</p></div>
@@ -239,8 +254,9 @@ h2{font-size:33pt}
 <div class="account"><b>品牌与门店</b><p><a href="https://www.douyin.com/user/MS4wLjABAAAAfjDH6zUe0U9eZ7-LnWcYmGbRvLRP_PZLUDWEjB8qR846tAxyQ_aH0RWgVEDH9AYL">品牌官方号</a> · <a href="https://www.douyin.com/user/MS4wLjABAAAAJtMOODdYhTOaGGpVIUTfroevETlHusnvK6YTNOaXzmo_EBtyllj9KANak4POPd6g">深圳茂业店</a> · <a href="https://www.douyin.com/user/MS4wLjABAAAAOhDCY8fM2TNjldcGCNFfk_gnJqOgJ0HncjT2RpDqOYM">深圳 K11 店</a>（主页显示 0 条） · <a href="https://www.douyin.com/video/7631525034498034950">香港认证商家号</a></p></div>
 <div class="account"><b>门店关联个人号</b><p>罗湖 <a href="https://www.douyin.com/video/7600722174009281827">林林</a>、<a href="https://www.douyin.com/video/7668243613142256902">丹丹</a>；K11 <a href="https://www.douyin.com/video/7705001930619129129">小羊</a>、<a href="https://www.douyin.com/video/7696088638194535718">子晴</a>。关联依据为公开简介与作品。</p></div>
 <div class="account"><b>种草与同城探店</b><p><a href="https://www.douyin.com/video/7673137744159627689">奢侈品集合店号</a>做 AMI 真人上身，<a href="https://www.douyin.com/video/7696075591170231588">深圳买买买</a>做本地消费与预算选题，<a href="https://www.douyin.com/video/7704233459224497427">老牛走遍天下</a>谈商场经营与奢品集合店。</p></div>
+<div class="account account-followup"><b>本轮补查</b><p><a href="https://www.douyin.com/video/7712065109094386985">马克连载实价</a> · <a href="https://www.douyin.com/video/7688287728714206518">杭州阿杰做礼赠</a> · <a href="https://www.douyin.com/video/7655661854739483914">三亚奢探长置顶真假题</a> · <a href="https://www.douyin.com/user/MS4wLjABAAAAdES1pj-0uXa3bQKGBx6TlwsnlwGagr8fCcIQZ008AQ1xX6lr_rjSYQfni9dAMuCP">广东道店做旅游和优惠券</a></p></div>
 </div>
-<p class="meta-note">K11 店号与 K11 关联个人号分别核查。公开互动用于观察内容表现，完整账号名录、到店与成交待团队确认。</p>
+<p class="meta-note">作品数和点赞为公开快照。账号关联依据为简介和作品。客群占比与成交需结合门店数据验证。</p>
 </section>
 
 
@@ -292,17 +308,18 @@ h2{font-size:33pt}
 <section class="slide" id="titles" aria-labelledby="titles-title">
 <div class="slide-head">
 <p class="eyebrow">标题文案复盘</p><h2 id="titles-title">从「深圳去哪逛」写到「这款怎么选」</h2>
-<p class="lead">同城话题、活动和预算题都已经出现。首轮重点测试能进入具体问款的标题。</p>
+<p class="lead">罗湖店号活动标题较集中。马克已把带日期的实价做成连载，可以在标题上加顾客的预算、用途或试背问题。</p>
 </div>
 <table class="title-table">
 <thead><tr><th>标题入口</th><th>已看到的作品</th><th>深圳版标题</th></tr></thead>
 <tbody>
 <tr><td><strong>城市问题</strong></td><td data-label="已看到的作品">林林用「深圳哪里值得去」做一日游内容。<br><a href="https://www.douyin.com/video/7600722174009281827">公开置顶作品 ↗</a></td><td data-label="深圳版标题">周末去罗湖试通勤包，半小时怎么逛？</td></tr>
 <tr><td><strong>开业与活动</strong></td><td data-label="已看到的作品">罗湖门店号发布开业、上新、团购券。<br><a href="https://www.douyin.com/video/7712332735498538275">罗湖店活动作品 ↗</a></td><td data-label="深圳版标题">周末来罗湖试包，这次先看哪两款？</td></tr>
-<tr><td><strong>预算与选款</strong></td><td data-label="已看到的作品">深圳买买买问同一预算能买到什么 Burberry。<br><a href="https://www.douyin.com/video/7696075591170231588">预算题作品 ↗</a></td><td data-label="深圳版标题">同样是通勤小包，哪只放得下一把伞？</td></tr>
+<tr><td><strong>实价与选款</strong></td><td data-label="已看到的作品">马克从 11 月 9 日到 25 日有 9 条带日期的实价题。<br><a href="https://www.douyin.com/video/7712065109094386985">马克 11 月 25 日实价 ↗</a></td><td data-label="深圳版标题">同一预算挑通勤包，到店可以先试哪两只？</td></tr>
+<tr><td><strong>信任问答</strong></td><td data-label="已看到的作品">林林直接做真假顾虑，香港商家号把溯源内容置顶。<br><a href="https://www.douyin.com/video/7711299806865411369">林林真假选题 ↗</a></td><td data-label="深圳版标题">第一次逛罗湖奥莱，试背前怎么核验这只包？</td></tr>
 </tbody>
 </table>
-<p class="meta-note">城市题看同城触达和地点点击。选款题看收藏、具体问款与试背咨询。</p>
+<p class="meta-note">实价内容同屏注明对应门店和日期，发布前复核库存与适用条件。选款及服务题回看具体问款、预约和到店。</p>
 </section>
 
 <section class="slide" id="script" aria-labelledby="script-title">
@@ -334,16 +351,34 @@ h2{font-size:33pt}
 
 <section class="slide" id="audience" aria-labelledby="audience-title">
 <div class="slide-head">
-<p class="eyebrow">精准人群打法</p><h2 id="audience-title">先从一个真实购买任务切入</h2>
-<p class="lead">首轮测试在深圳自购、已有预算、周末有条件到店试背的通勤人群。</p>
+<p class="eyebrow">品牌客群与内容机会</p><h2 id="audience-title">顾客为什么买，为什么来店</h2>
+<p class="lead">把公开作品和评论里的需求按四种购买任务拆开。罗湖先测预算明确的深圳通勤自购客。</p>
 </div>
-<div class="columns-3">
-<article class="audience-block"><span class="label">首轮主测</span><h3>通勤自购者</h3><p>担心小包放不下日用品、大包上身显大。同衣、同机位、同一组物品做两款实测。</p></article>
-<article class="audience-block"><span class="label">同城延展</span><h3>周末购物者</h3><p>想知道怎么去、先看哪一排、这趟值不值得。先给路线和可试款。</p></article>
-<article class="audience-block"><span class="label">信任延展</span><h3>第一次买奢品</h3><p>在意买完使用频率、商品状态和售后。在真实门店拍实物、核验方式和购买前该问什么。</p></article>
+<div class="audience-grid">
+<article class="audience-block"><span class="label">罗湖优先 · 预算与折扣</span><h3>预算明确的淘款客</h3><p>想知道预算能买到什么、现在有哪几款。拍同预算双款对比、日期与门店明确的实价。</p><a href="https://www.douyin.com/video/7696075591170231588">深圳买买买预算题 ↗</a></article>
+<article class="audience-block"><span class="label">K11 可测 · 精品与礼赠</span><h3>有场合和风格需求的客人</h3><p>为通勤、聚会或送礼挑搭配。拍同衣换两只包、当季精品试穿、按对象挑礼。</p><a href="https://www.douyin.com/video/7668243613142256902">丹丹礼赠题 ↗</a> · <a href="https://www.jiemian.com/article/14059985.html">K11 SELECT 店型 ↗</a></article>
+<article class="audience-block"><span class="label">各门店 · 信任与服务</span><h3>首次购买或慎重下单的客人</h3><p>想问商品状态、怎么核验和适用售后。用一件实物走一遍门店能提供的流程。</p><a href="https://www.douyin.com/video/7655661854739483914">三亚奢探长真假题 ↗</a> · <a href="https://www.douyin.com/video/7691041265471184219">券与商品状态提问 ↗</a></article>
+<article class="audience-block"><span class="label">深圳同城与香港 · 购物路线</span><h3>把购物排进行程的客人</h3><p>先算顺不顺路、值不值得留时间。给入口、可逛品类、适用券或现场问货方式。</p><a href="https://www.douyin.com/video/7598492607588748598">阿文攻略中的问路评论 ↗</a></article>
 </div>
-<div class="summary"><p>公开评论里已有「去哪买羽绒服」和「商品是真品吗」这类问题。深圳人群优先级为试拍假设，首轮以实际评论、问款及到店记录调整。</p></div>
-<div class="sources"><a href="https://www.douyin.com/video/7598492607588748598">阿文购物攻略与问路评论 ↗</a><a href="https://www.douyin.com/video/7586997400846306569">澳门购物样本与信任问题 ↗</a></div>
+<p class="meta-note">公司资料第 15 页提出用客户标签匹配货品，如经典、潮流和商务。真实客群分布可用门店的到店来源、预算、购买用途、品类和会员复购记录复核。</p>
+</section>
+
+
+<section class="slide" id="roles" aria-labelledby="roles-title">
+<div class="slide-head">
+<p class="eyebrow">账号复查与优化</p><h2 id="roles-title">让各账号回答一个清楚的问题</h2>
+<p class="lead">同一批实拍素材可以共用。门店入口、选款理由和顾客动作跟着账号职责走。</p>
+</div>
+<table class="title-table">
+<thead><tr><th scope="col">账号与用户问题</th><th scope="col">从样本看到的现状</th><th scope="col">优先改什么</th></tr></thead>
+<tbody>
+<tr><td><strong>品牌号</strong><br>在哪里买得放心</td><td data-label="账号现状">多地门店和开业介绍较多。香港商家号已经把路线和溯源放在置顶。</td><td data-label="优先动作">置顶三条常用入口，分别讲深圳门店和店型、核验和售后、现货与试背。</td></tr>
+<tr><td><strong>深圳门店号</strong><br>现在怎么去、能试什么</td><td data-label="账号现状">罗湖已有路线、开业和券。复查时 K11 认证主页显示 0 条，关联个人号有内容。</td><td data-label="优先动作">罗湖先做路线、真实可试款和当班咨询。K11 先补位置、精品试穿和问货入口。</td></tr>
+<tr><td><strong>买手、导购与种草</strong><br>哪款更适合我</td><td data-label="账号现状">马克做实价连载，林林讲取舍，丹丹做礼赠及搭配，小羊和子晴做 K11 周边与商品题。</td><td data-label="优先动作">马克延续实价，林林做两款实测，丹丹做场合搭配，K11 个人号先测当季精品与上身。</td></tr>
+<tr><td><strong>同城探店号</strong><br>值不值得顺路去</td><td data-label="账号现状">深圳买买买有城市议题和预算题，林林置顶用深圳一日游切入。</td><td data-label="优先动作">把城市问题做成可走的商圈路线。每条交代门店、一个具体逛点和一个地点入口。</td></tr>
+</tbody>
+</table>
+<div class="sources"><a href="https://www.douyin.com/video/7631525034498034950">香港号置顶路线 ↗</a><a href="https://www.douyin.com/video/7712065109094386985">马克实价 ↗</a><a href="https://www.douyin.com/video/7709086883485191450">小羊场景选品 ↗</a><a href="https://www.douyin.com/video/7696088638194535718">子晴同城置顶 ↗</a></div>
 </section>
 
 <section class="slide" id="picture" aria-labelledby="picture-title">
@@ -383,10 +418,11 @@ h2{font-size:33pt}
 </div>
 <div class="columns-3">
 <article class="column"><span class="label">拍前</span><h3>选店、选货、定承接人</h3><p>确认实际店铺、两只在售包和出镜导购。收集门店常见问题，选一项当天能拍清。</p></article>
-<article class="column"><span class="label">首周</span><h3>半天拍摄，分批发布</h3><p>先拍路线、实测、试背问答。24 小时和 72 小时看后台可见的同城触达、地点点击、实际问款。</p></article>
-<article class="column"><span class="label">次周</span><h3>让门店反馈回到脚本</h3><p>去重记录有效咨询、预约和试背。询问来源并记录可核实的作品，按真实顾客问题改下一批。</p></article>
+<article class="column"><span class="label">首周</span><h3>半天拍摄，分批发布</h3><p>先发路线、实测、试背问答三条。按 24 小时和 72 小时记录同城触达、地点点击及实际问款。</p></article>
+<article class="column"><span class="label">次周</span><h3>让门店反馈回到脚本</h3><p>让导购记录来源作品、需求、预约与到店。地点点击多而问款少，补款式与库存。问款多而到店少，先查回复和到店安排。</p></article>
 </div>
-<p class="final-quote">我做过穿搭选品、拍摄剪辑，也跟进过 10 个珠宝店员号。首轮我可以把导购最常回答的问题写成脚本，跟一场拍摄，再和门店对一次实际咨询。</p>
+<div class="summary pilot-check"><p><strong>有效咨询</strong>　有明确款式、预算或试背需求，按顾客去重。用预约人数除以有效咨询人数看预约比例，用预约后实际到店人数除以预约人数看预约到店比例。来源未知单独记录。</p></div>
+<p class="final-quote">我做过穿搭选品、拍摄剪辑，也跟进过 10 个珠宝店员号。首轮可以从真实顾客的问题出发，带门店拍一场，再一起复盘这三条片有没有人问、有多少人来试。</p>
 <p class="meta-note">分析维度参考《北大罗帆讲考研数学 · 账号分析报告 v2.0》。业务依据包括用户提供的欧派国际集团资料和抖音公开页面。门店和活动照片来自集团简介第 14、17 页及公开开业图，出处标在对应页面。</p>
 </section>
 </main>
